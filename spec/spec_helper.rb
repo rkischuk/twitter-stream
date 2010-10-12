@@ -5,7 +5,7 @@ gem 'rspec', '= 1.3.0'
 require 'spec'
 require 'spec/mocks'
 
-require 'twitter/json_stream'
+require 'twitter_stream/json_stream'
 
 def fixture_path(path)
   File.join(File.dirname(__FILE__), '..', 'fixtures', path)

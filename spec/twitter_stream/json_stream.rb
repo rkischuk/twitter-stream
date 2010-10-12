@@ -1,8 +1,8 @@
 $:.unshift "."
 require File.dirname(__FILE__) + '/../spec_helper.rb'
-require 'twitter/json_stream'
+require 'twitter_stream/json_stream'
 
-include Twitter
+include TwitterStream
 
 describe JSONStream do
   
@@ -53,7 +53,7 @@ describe JSONStream do
   context "on valid stream" do
     attr_reader :stream
     before :each do
-      $data_to_send = read_fixture('twitter/basic_http.txt')
+      $data_to_send = read_fixture('twitter_stream/basic_http.txt')
       $recieved_data = ''
       $close_connection = false
     end

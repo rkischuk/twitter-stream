@@ -3,7 +3,7 @@ require 'em/buftok'
 require 'uri'
 require 'roauth'
 
-module Twitter
+module TwitterStream
   class JSONStream < EventMachine::Connection
     MAX_LINE_LENGTH = 1024*1024
     
