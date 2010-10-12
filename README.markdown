@@ -1,4 +1,6 @@
-# twitter-stream
+# xh5-twitter-stream
+
+Forked from original TwitterStream gem. This fork doesn't use Twitter::Module.
 
 Simple Ruby client library for [twitter streaming API](http://apiwiki.twitter.com/Streaming-API-Documentation). 
 Uses [EventMachine](http://rubyeventmachine.com/) for connection handling. Adheres to twitter's [reconnection guidline](http://apiwiki.twitter.com/Streaming-API-Documentation#Connecting).
@@ -7,15 +9,15 @@ JSON format only.
 
 ## Install
 
-    sudo gem install twitter-stream -s http://gemcutter.org
+    sudo gem install xh5-twitter-stream -s http://gemcutter.org
 
 ## Usage
 
     require 'rubygems'
-    require 'twitter/json_stream'
+    require 'twitter_stream/json_stream'
     
     EventMachine::run {
-      stream = Twitter::JSONStream.connect(
+      stream = TwitterStream::JSONStream.connect(
         :path    => '/1/statuses/filter.json?track=football',
         :auth    => 'LOGIN:PASSWORD'
       )
