@@ -25,7 +25,8 @@ Gem::Specification.new do |s|
      "lib/twitter_stream/.json_stream.rb.swp",
      "lib/twitter_stream/json_stream.rb",
      "spec/spec_helper.rb",
-     "spec/twitter_stream/json_stream.rb"
+     "spec/twitter_stream/json_stream.rb",
+     "xh5-twitter-stream.gemspec"
   ]
   s.homepage = %q{http://github.com/erichurst/twitter-stream}
   s.rdoc_options = ["--charset=UTF-8"]
