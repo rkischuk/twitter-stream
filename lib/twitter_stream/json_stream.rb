@@ -283,7 +283,7 @@ module TwitterStream
     end
     
     def filter_list
-      "track=#{@options[:filters]}"
+      "track=#{@options[:filters].join(',')}"
     end
 
   end  
