@@ -283,8 +283,12 @@ module TwitterStream
     end
     
     def filter_list
-      "track=#{@options[:filters].join(',')}"
+      if @options[:filters].is_a?(Array)
+        "track=#{@options[:filters].join(',')}"
+      else
+        "track=#{@options[:filters]}"
+      end
     end
 
-  end  
+  end
 end
