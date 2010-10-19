@@ -1,3 +1,4 @@
+*.gem
 .rake_tasks~
 *.swp
 *.orig
