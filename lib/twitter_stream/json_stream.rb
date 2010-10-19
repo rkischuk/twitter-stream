@@ -185,7 +185,7 @@ module TwitterStream
       
       content = @options[:content]
       
-      if !@options[:filters].empty?
+      if !@options[:filters].nil? && !@options[:filters].empty?
         if @options[:method].to_s.upcase == 'GET'
           request_uri << "?#{filter_list}"
         else
