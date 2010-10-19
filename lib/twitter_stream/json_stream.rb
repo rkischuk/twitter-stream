@@ -32,8 +32,8 @@ module TwitterStream
       :timeout      => 0,
       :proxy        => ENV['HTTP_PROXY'],
       :auth         => nil,
-      :oauth        => {},
-      :filters      => []
+      :oauth        => {}
+      #:filters      => []
     }
 
     attr_accessor :code
