@@ -275,8 +275,9 @@ module TwitterStream
     def oauth_header
       uri = "http://#{@options[:host]}#{@options[:path]}"
       
+      opts = @options[:filters].is_a?(Array) ? @options[:filters].join(',') : @options[:filters]
       params = {
-        'track' => @options[:filters].join(',')
+        'track' => opts
       }
       
       ::ROAuth.header(@options[:oauth], uri, params, @options[:method])
